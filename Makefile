@@ -172,7 +172,7 @@ bin/calicoctl:
 	-docker rm -f calico-ctl
 	# Latest calicoctl binaries are stored in automated builds of calico/ctl.
 	# To get them, we create (but don't start) a container from that image.
-	docker pull $(CALICOCTL_CONTAINER_NAME)
+	# docker pull $(CALICOCTL_CONTAINER_NAME) 
 	docker create --name calico-ctl $(CALICOCTL_CONTAINER_NAME)
 	# Then we copy the files out of the container.  Since docker preserves
 	# mtimes on its copy, check the file really did appear, then touch it

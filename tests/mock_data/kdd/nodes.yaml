@@ -13,7 +13,7 @@ metadata:
   namespace: ""
 spec:
   externalID: kube-master
-  podCIDR: 192.168.221.192/26
+  podCIDR: 192.168.221.192/27
 
 ---
 
